@@ -16,5 +16,7 @@ RUN curl -fsS -o /tmp/icu.tar.gz -L http://download.icu-project.org/files/icu4c/
 
 RUN docker-php-ext-install pdo_mysql
 
+RUN a2enmod rewrite
+
 EXPOSE 80
 
